@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "sauce-labs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.saucelabs.com",
+        "--header",
+        "Authorization: Basic <BASE64_OF_USERNAME_COLON_ACCESSKEY>",
+        "--header",
+        "X-Sauce-Region: <REGION>"
+      ]
+    }
+  }
+}
