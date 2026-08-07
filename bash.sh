@@ -10,3 +10,7 @@ curl -u "$SAUCE_USERNAME:$SAUCE_ACCESS_KEY" --location \
 --request POST 'https://api.us-west-1.saucelabs.com/v1/storage/upload' \
 --form 'payload=@"<path to the iOS file>/iOS-Real-Device-MyRNDemoApp.ipa"' \
 --form 'name="iOS-Real-Device-MyRNDemoApp.ipa"'
+curl -u "$SAUCE_USERNAME:$SAUCE_ACCESS_KEY" --location \
+--request GET 'https://api.us-west-1.saucelabs.com/team-management/v1/teams'
+curl -L -X GET 'https://api.us-west-1.saucelabs.com/team-management/v1/users/' \
+-u $SAUCE_USERNAME:$SAUCE_ACCESS_KEY
